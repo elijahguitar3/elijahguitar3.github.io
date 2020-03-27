@@ -8,7 +8,7 @@ img{
 .main-wrapper {
   background: #51B9CD;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns:  1fr;
   grid-template-rows: repeat(0, 1fr);
   gap: 5px;
 }
@@ -62,4 +62,10 @@ img{
 .pagebody{
   background: beige
 
+}
+
+@media(min-width:800px){
+  .main-wrapper{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
