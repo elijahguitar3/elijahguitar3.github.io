@@ -103,7 +103,7 @@ img{
 
   .pic1 {
     background: pink;
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 2/3;
   }
 
@@ -115,7 +115,7 @@ img{
 
   .pic3{
     background: red;
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 4/5;
   }
 
