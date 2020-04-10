@@ -8,7 +8,7 @@ green: #8fc0af*/
 
 body{
   background-color: #fbf4e1;
-  font-family: 'Oxigen', sans-serif;
+  font-family: 'Comic Neue', cursive;
   line-height: 2rem;
   color:#4b5343;
   font-size: 1.3rem;
@@ -34,7 +34,7 @@ header{
   right:2rem; */
 }
 h1, .servings, .final{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 h1{
   color:#af633c;
