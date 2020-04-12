@@ -5,28 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quick Time Tacos!</title>
-  <link rel="stylesheet" href="css/crepe.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <main>
     <header>
       <h1>Quick Time Tacos!</h1>
-    </header>
-    <div class="servings clear">
-      <p>Serves 3-4 people</p>
-    </div>
-    <section class="intro">
-      <p>Looking for resturant quality tacos in your own home?</p>
-      <p>In less than 20 minutes, you can make them yoursel!</p>
-      <p>Save a trip to Taco Bell, make Quick Time Tacos!</p>
-      <button class="step1" type="button" name="begin">Begin!</button>
-    </section>
-    <section class="ingredients hide">
-      <h2>Ingredients</h2>
       <img src="images/tacopic1.jpg" alt="tacopic1">
+    </header>
+    <div>
+      <section class="intro">
+        <p>Looking for resturant quality tacos in your own home?</p>
+        <p>In less than 20 minutes, you can make them yourself!</p>
+        <p>Save a trip to Taco Bell, make Quick Time Tacos!</p>
+        <p>Serves 3-4 people</p>
+        <p> These quick and easy tacos are a great at home recipe for beginers and experts alike. Minimal preperation, less than 20 minutes cook time, and less money than you would spend at your favorite Mexican resturaunt! The serving size can be
+          adjusted easily by simply buying as many taco shells as you need and dividing the meat evenly amongst them. There is awalys enough to go around. For leftovers, the taco shells can also be wrapped in tin foil and all of the fillings can be
+          store in the fridge. To reheat, simply warm the meat in the microwave and refill the shell with all of your other toppings. </p>
+        <button class="step1" type="button" name="begin">Begin!</button>
+      </section>
+    </div>
+    <br> </br>
+    <section class="ingredients">
+      <h2>1. Get Ingredients!</h2>
+      <img src="images/thestuff.jpg" alt="thestuff">
       <ul>
         <li>Seasoned ground beef</li>
         <li>Hard corn taco shells</li>
@@ -37,33 +42,38 @@
         <li>Pre-made spanish rice</li>
         <li>Hot sauce</li>
       </ul>
-      <p class="ing">Ingredients</p>
       <button class="step2" type="button" name="next">Next</button>
     </section>
-    <section class="cook the meat hide">
-      <h2>Cook the Meat</h2>
+    <section class="cook">
+      <h2>2. Cook the Meat!</h2>
       <p>Thoroughly cook the ground beef in a pan on stove top. <<br>
           This will take 5-10 minutes". Mix in hot sauce to taste.</p>
       <img src="images/cookthemeat.jpg" alt="cookthemeat">
       <button class="step3" type="button" name="next">Next</button>
     </section>
-    <section class="filling the tacos with meat hide">
-      <h2>Filling the Tacos with Meat</h2>
+    <section class="fill">
+      <h2>3. Fill the Tacos with Meat</h2>
       <p>Place the hard taco shells on a plate, with the opening facing up. <br>
         Use a spoon to fill the tacos with the seasoned ground beef you just prepared.</p>
       <img src="images/fillingtacos.jpg" alt="fillingtacos"> <br>
       <button class="step4" type="button" name="next">Next</button>
     </section>
-    <section class="top your taco hide">
-      <h2>Top Your Tacos!</h2>
+    <section class="top">
+      <h2>4. Top Your Tacos!</h2>
       <p>Add sour cream, shredded cheddar cheese, lettuce, diced tomatoes, and hot sauce to the top of your taco.
         Add or skip any toppings you may want.</p>
       <img src="images/fillingtacos22.jpg" alt="fillingtacos22">
-      <button class="step3" type="button" name="next">Next</button>
+      <button class="step5" type="button" name="next">Next</button>
     </section>
-    <section class="Serve!">
-      <h2>Serve Your Tacos!</h2>
-      <p>Serve yourr tacos with a side of spanish rice and enjoy!</p>
+    <section class="serve">
+      <h2>5. Serve Your Tacos!</h2>
+      <p>Serve your tacos with an optional side of spanish rice!</p>
+      <img src="images/rice.jpg" alt="rice">
+      <button class="step6" type="button" name="next">Next</button>
+    </section>
+    <section class="done">
+      <h2>6. Done!</h2>
+      <p>Enjoy your tasty quick time tacos! </p>
       <img src="images/tacopic1.jpg" alt="tacopic1">
     </section>
   </main>
@@ -78,31 +88,75 @@
       });
       // Step Two
       $(".step2").click(function() {
-        $(".ingredients").slideUp();
-        $(".mix").slideDown();
-      });
-      $("p.ing").on({
-        mouseenter: function() {
-          $(".ingredients img").fadeIn(1000);
-        },
-        mouseleave: function() {
-          $(".ingredients img").fadeOut(1000);
-        }
+        $(".ingredients").hide(1000);
+        $(".cook").show(1000);
       });
       // Step three
       $(".step3").click(function() {
-        $(".mix").remove();
-        $(".cook").css("display", "block");
+        $(".cook").hide(1000);
+        $(".fill").show(1000);
       });
       // Step four
       $(".step4").click(function() {
-        $(".cook").slideUp("slow");
-        $(".serve").show();
-        $(".serve").append("<p class='final'>Enjoy!</p>");
-
+        $(".fill").hide(1000);
+        $(".top").show(1000);
+      });
+      // Step five
+      $(".step5").click(function() {
+        $(".top").hide(1000);
+        $(".serve").show(1000);
+      });
+      //Step six
+      $(".step6").click(function() {
+        $(".serve").hide(1000);
+        $(".done").show(1000);
+        $(".done").append("<p> Buen Provecho </p>");
+        $(".done").addClass("doneclass")
       });
 
-
+      //mouse overs
+              $(".thestuff img").on({
+                mouseenter: function() {
+                  $(".yum img").fadein(1000);
+                },
+                mouseleave: function() {
+                  $(".yum img").fadeout(1000);
+                }
+                $(".cookthemeat img").on({
+                  mouseenter: function() {
+                    $(".yum img").fadein(1000);
+                  },
+                  mouseleave: function() {
+                    $(".yum img").fadeout(1000);
+                  }
+                  $(".cookthemeat img").on({
+                    mouseenter: function() {
+                      $(".yum img").fadein(1000);
+                    },
+                    mouseleave: function() {
+                      $(".yum img").fadeout(1000);
+                    }
+                    $(".fillingtacos img").on({
+                      mouseenter: function() {
+                        $(".yum img").fadein(1000);
+                      },
+                      mouseleave: function() {
+                        $(".yum img").fadeout(1000);
+                      }
+                      $(".fillingtacos22 img").on({
+                        mouseenter: function() {
+                          $(".yum img").fadein(1000);
+                        },
+                        mouseleave: function() {
+                          $(".yum img").fadeout(1000);
+                        }
+                        $(".rice img").on({
+                          mouseenter: function() {
+                            $(".yum img").fadein(1000);
+                          },
+                          mouseleave: function() {
+                            $(".yum img").fadeout(1000);
+                          }
     });
   </script>
 </body>

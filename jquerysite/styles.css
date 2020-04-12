@@ -1,56 +1,21 @@
-/* Color Palette */
-/* Linen: #faf4e6
-Peru: #da8a5c
-Olive: #4b5343
-Brown: #bfab92
-Sienna: #af633c
-green: #8fc0af*/
-
 body{
-  background-color: #fbf4e1;
+  background-color: #ede9a3;
   font-family: 'Comic Neue', cursive;
   line-height: 2rem;
-  color:#4b5343;
-  font-size: 1.3rem;
+  color:##003e21;
+  font-size: 1.5rem;
   line-height: 2.3rem;
 }
 main{
-  background: url("../images/bakerySm-bg.jpg") no-repeat top center fixed;
-  background-size:cover;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding:0 2rem;
+  background-color:#D7C37A;
 }
 /* ==================Header================= */
 header{
-  float:right;
+  float:left;
   width: 50%;
-  margin-right:2rem;
-  /* position:relative;
-  right:2rem; */
-}
-h1, .servings, .final{
-  font-family: 'Source Sans Pro', sans-serif;
 }
 h1{
-  color:#af633c;
-  font-size:2.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 3rem;
-  margin-top: 0;
-}
-h1 span, .servings{
-  color: #8fc0af;
-}
-h1 {
-  transform:rotate(-22deg);
-}
-h1 span{
-  font-size:3rem;
+  color:#003e21;
 }
 .hide{
   display:none;
@@ -65,30 +30,20 @@ button{
   clear: both;
 }
 /* ==================Intro================= */
-.servings{
-  display:inline-block;
-  margin-top:3rem;
-}
 .intro{
   font-size:1.5rem;
-  width:60%;
+  width:65%;
+  color: #003e21;
+  font-family: 'Lato', sans-serif;
 }
 /* ==================Ingredients================= */
-.intro, .ingredients, .mix, .cook, .serve{
-  /* position: relative;
-  top:1rem; */
+.intro, .ingredients, .cook, .fill, .top, .serve, .done{
+  font-family: 'Lato', sans-serif;
+  color: #003e21;
 }
-.ingredients img{
-  position:absolute;
-  /* left:-600px; */
-  bottom:9rem;
-  width:60%;
-  display: none;
-}
-.ingredients p{
-  background: #bfab92;
-  display:table;
-  padding:0 .5rem;
+.ingredients{
+  background: #ede9a3
+    font-family: 'Lato', sans-serif;
 }
 /* ==================Mix================= */
 /* ==================Cook================= */
@@ -97,43 +52,27 @@ button{
   font-size:3rem;
   color:#af633c;
 }
-cite{
-  position:fixed;
-  bottom:1rem;
-  right:2rem;
-}
-cite a{
-  font-size: .75rem;
-  color:#bfab92;
+.doneclass{
+  background-color: #d7c37a;
 }
 /* ==================Media Queries================= */
 @media(min-width:700px){
   main{
-    background: url("../images/bakery-bg.jpg") no-repeat top center fixed;
-    background-size:cover;
+    background-color:#d7c37a
     padding-left:10%;
+    line-height: 2rem;
+    font-size:1.5rem;
+    width: 60rem;
   }
   h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
     display:table;
     margin-top:5rem;
-  }
-  h1 span{
-    font-size:5rem;
-  }
-  /* ==================Header================= */
-  header{
-    float:none;
-    /* padding-top:1rem;
-    margin-top:2rem; */
+    color:#003e21;
   }
   /* ==================Intro================= */
-  .servings{
-    font-size: 2rem;
-    position: relative;
-    /* top:5rem; */
-  }
+
   .intro{
     font-size: 2rem;
     line-height: 3.5rem;
@@ -143,11 +82,11 @@ cite a{
 .intro, .ingredients, .mix, .cook, .serve{
   top:5rem;
 }
-.ingredients img{
+.rice img{
   width:auto;
   bottom:20rem;
 }
-/* ==================Mix================= */
-/* ==================Cook================= */
-/* ==================Serve================= */
+.cookthemeat img{
+  width:500px;
+}
 }
