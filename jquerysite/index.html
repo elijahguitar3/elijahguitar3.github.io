@@ -13,7 +13,7 @@
   <main>
     <header>
       <h1>Quick Time Tacos!</h1>
-      <img {display: block;} src="images/tacopic1.jpg" alt="tacopic1">
+      <img src="images/tacopic1.jpg" alt="tacopic1" class="tacopic1" id="tacopic1">
     </header>
 
     <div>
@@ -32,7 +32,9 @@
     <br> </br>
     <section class="ingredients hide">
      <h2>1. Get Ingredients!</h2>
-      <img src="images/thestuff.jpg" alt="thestuff">
+     <div class="steppic">
+        <img src="images/thestuff.jpg" alt="" class="thestuff" id="thestuff">
+
       <ul>
         <li>Seasoned ground beef</li>
         <li>Hard corn taco shells</li>
@@ -69,7 +71,7 @@
     <section class="serve hide">
       <h2>5. Serve Your Tacos!</h2>
       <p>Serve your tacos with an optional side of spanish rice!</p>
-      <img {display:block;} src="images/rice.jpg" alt="rice">
+      <img src="images/rice.jpg" alt="rice">
       <br><button class="step6" type="button"  name="next">Next</button></br>
     </section>
     <section class="done hide">
@@ -114,20 +116,21 @@
         $(".done").append("<p> Buen Provecho </p>");
         $(".done").addClass("doneclass1");
       });
-      $(".thestuff img").on({
+
+      $("#thestuff img").on({
       mouseenter: function() {
-             $(".tacopic1 img").fadein(1000);
+             $("#tacopic1 img").fadein();
        },
        mouseleave: function() {
-              $(".tacopic1 img").fadeout(1000);
+              $(".tacopic1 img").fadeout();
             }
        });
        $(".fillingtacos img").on({
        mouseenter: function() {
-              $(".tacopic1 img").fadein(1000);
+              $(".tacopic1 img").fadein();
         },
         mouseleave: function() {
-               $(".tacopic1 img").fadeout(1000);
+               $(".tacopic1 img").fadeout();
              }
         });
     });
