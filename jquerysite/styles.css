@@ -3,15 +3,13 @@ body{
   font-family: 'Comic Neue', cursive;
   line-height: 2rem;
   color:##003e21;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 main{
   background-color:#D7C37A;
 }
-/* ==================Header================= */
 header{
-  float:left;
   width: 50%;
 }
 h1{
@@ -26,17 +24,15 @@ button{
   font-size: 2rem;
   color:#ffffff;
 }
-.clear{
-  clear: both;
-}
-/* ==================Intro================= */
+.body img {
+  display: block;
+} 
 .intro{
   font-size:1.5rem;
-  width:65%;
+  width:50%;
   color: #003e21;
   font-family: 'Lato', sans-serif;
 }
-/* ==================Ingredients================= */
 .intro, .ingredients, .cook, .fill, .top, .serve, .done{
   font-family: 'Lato', sans-serif;
   color: #003e21;
@@ -45,15 +41,11 @@ button{
   background: #ede9a3
     font-family: 'Lato', sans-serif;
 }
-/* ==================Mix================= */
-/* ==================Cook================= */
-/* ==================Serve================= */
-.final{
-  font-size:3rem;
-  color:#af633c;
+.doneclass1{
+  background-color: #55a44e	;
 }
-.doneclass{
-  background-color: #d7c37a;
+.yum img{
+  width:auto;
 }
 /* ==================Media Queries================= */
 @media(min-width:700px){
@@ -78,15 +70,10 @@ button{
     line-height: 3.5rem;
     top:5rem;
   }
-/* ==================Ingredients================= */
 .intro, .ingredients, .mix, .cook, .serve{
   top:5rem;
 }
-.rice img{
-  width:auto;
-  bottom:20rem;
-}
-.cookthemeat img{
+.cookthemeat img, .fillingtaco img, .fillingtacos22 img, .rice img, .tacopic1 img, .thestuff img, .yum img {
   width:500px;
 }
 }
