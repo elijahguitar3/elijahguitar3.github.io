@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <main>
     <header>
@@ -31,26 +32,26 @@
     </div>
     <br> </br>
     <section class="ingredients hide">
-     <h2>1. Get Ingredients!</h2>
-     <div class="steppic">
-        <img src="images/thestuff.jpg" alt="" class="thestuff" id="thestuff">
+      <h2>1. Get Ingredients!</h2>
+      <div class="steppic">
+        <img src="images/thestuff.jpg" alt="" class="thestuff" id="thestuff"> </div>
 
-      <ul>
-        <li>Seasoned ground beef</li>
-        <li>Hard corn taco shells</li>
-        <li>Shreaded cheddar cheese</li>
-        <li>Sour cream</li>
-        <li>Lettuce</li>
-        <li>Diced tomato</li>
-        <li>Pre-made spanish rice</li>
-        <li>Hot sauce</li>
-      </ul>
-      <button class="step2" type="button" name="next">Next</button>
+        <ul>
+          <li>Seasoned ground beef</li>
+          <li>Hard corn taco shells</li>
+          <li>Shreaded cheddar cheese</li>
+          <li>Sour cream</li>
+          <li>Lettuce</li>
+          <li>Diced tomato</li>
+          <li>Pre-made spanish rice</li>
+          <li>Hot sauce</li>
+        </ul>
+        <button class="step2" type="button" name="next">Next</button>
     </section>
     <section class="cook hide">
       <h2>2. Cook the Meat!</h2>
       <p>Thoroughly cook the ground beef in a pan on stove top. <br>
-          This will take 5-10 minutes". Mix in hot sauce to taste.</p>
+        This will take 5-10 minutes". Mix in hot sauce to taste.</p>
       <img src="images/cookthemeat.jpg" alt="cookthemeat">
       <br><button class="step3" type="button" name="next">Next</button></br>
     </section>
@@ -72,7 +73,7 @@
       <h2>5. Serve Your Tacos!</h2>
       <p>Serve your tacos with an optional side of spanish rice!</p>
       <img src="images/rice.jpg" alt="rice">
-      <br><button class="step6" type="button"  name="next">Next</button></br>
+      <br><button class="step6" type="button" name="next">Next</button></br>
     </section>
     <section class="done hide">
       <h2>6. Done!</h2>
@@ -117,22 +118,24 @@
         $(".done").addClass("doneclass1");
       });
 
-      $("#thestuff img").on({
-      mouseenter: function() {
-             $("#tacopic1 img").fadein();
+
+
+      $(".thestuff").on({
+      mouseover: function() {
+             $(".tacopic1").fadeIn(1000);
        },
-       mouseleave: function() {
-              $(".tacopic1 img").fadeout();
+       mouseout: function() {
+              $(".tacopic1").fadeOut(1000);
             }
        });
-       $(".fillingtacos img").on({
-       mouseenter: function() {
-              $(".tacopic1 img").fadein();
+      $(".fillingtacos").on({
+        mouseenter: function() {
+          $(".tacopic1").fadeIn(1000);
         },
         mouseleave: function() {
-               $(".tacopic1 img").fadeout();
-             }
-        });
+          $(".tacopic1").fadeOut(1000);
+        }
+      });
     });
   </script>
 </body>
