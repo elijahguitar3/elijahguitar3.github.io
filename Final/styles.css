@@ -1,0 +1,102 @@
+body{
+
+}
+header{
+}
+h1{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 30px;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 50px;
+
+}
+h2{
+	font-size: 35px;
+	padding:15px;
+}
+h3{
+	font-size: 23px;
+	text-align: center;
+}
+.top{
+	background-image: url("images/top2.jpg");
+	background-size:cover;
+	color:white;
+	text-align: center;
+	background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.logo{
+padding-top: 40px;
+
+}
+.subtitle{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:25px;
+	padding:01px;
+}
+.subhead{
+	text-align: center;
+	padding-top: 15px;
+}
+.section2{
+	background-image: url("images/bluepaper.jpg");
+	color: white;
+}
+.boldparagraph{
+	font-size: 25px;
+		text-align: center;
+		padding: 20px;
+}
+.section3{
+	background-color: white;
+	color: black;
+}
+.paragraph{
+	text-align: center;
+	padding-top: 20px;
+	padding:20px;
+	font-size: 20px;
+}
+.footerzone{
+	background-image: url("images/miami.jpg");
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.blurshot{
+	display: block;
+	padding-top: 50px;
+	padding-bottom:50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+
+
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: orange;
+  color: white;
+}
