@@ -1,0 +1,29 @@
+<header>
+    <link rel="stylesheet" href="./styles.css">
+
+</header>
+
+<body>
+<nav>
+  <div class="tootle-menu" >
+    <h1 id="toggle-bar">
+      ☰
+    </h1>
+  </div>
+  <ul class="mainMenu">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="adventures.html">My Adventures</a></li>
+	<li><a href="story.html">My Story</a></li>
+  </ul>
+</nav>
+</body>
+<script>
+    function toggleMenu() {
+        let getMenu = document.querySelector(".mainMenu");
+        getMenu.classList.toggle("hamburger");
+        }
+
+        let getHamburger = document.querySelector("#toggle-bar");
+
+        getHamburger.addEventListener("click", toggleMenu);
+    </script>

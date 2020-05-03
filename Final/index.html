@@ -17,19 +17,21 @@
   <!--css link-->
   <link rel="stylesheet" href="./styles.css">
 
-  <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="adventures.html">My Adventures</a>
-  <a href="mystory.html">My Story</a>
-  <a href="more.html">More...</a>
-</div>
   <!--fonts go here -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Elijah James Bogdansky</title>
 </head>
 
 <body>
-
+  <div class="newnav">
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="adventures.html">My Adventures</a>
+          <a href="story.html">My Story</a>
+      </div>
+  </div>
 
 <section id="home">
   <div class="main-wrapper">
@@ -62,6 +64,9 @@
       <div class="subhead">
         <h3> My Latest Adventure</h2>
       </div>
+      <div class="centerimage">
+        <img class="kanye" src="images/kanye.jpg" alt="" style="width: 100%;">
+      </div>
       <div>
         <h4> "Mary" | an Opera by Kanye West | Art Basel 2020 | Miami FL</h4>
         <div class="paragraph">
@@ -81,7 +86,7 @@
               <div>
                 <h5>Keep in Touch</h5>
                 <p>Stay updated on my new music, work experiences, and travel.</p>
-                <p>Check the box to get text updates when I release new music!</p>
+                <p>Mobile: Check the box to get text updates when I release new music!</p>
               </div>
             </div>
             <div class="contact">
@@ -92,7 +97,7 @@
                 <input type="checkbox" checked="checked" name="subscribe">
               </label>
               <div class="subscribe">
-                <input type="submit" value="Subscribe">
+                <input type="submit" value="Subscribe" style="color: black">
                 <br></br>
                 <br></br>
               </div>
@@ -101,7 +106,5 @@
 
 
         </div>
-        <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <a href="#" class="fa fa-facebook"></a>
 </section>
 </body>
