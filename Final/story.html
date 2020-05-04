@@ -17,7 +17,8 @@
   </script>
   <!--css link-->
   <link rel="stylesheet" href="./styles.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--fonts go here -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Elijah James Bogdansky</title>
@@ -29,13 +30,13 @@
 <body>
 
   <div class="newnav">
-      <label for="toggle">☰</label>
-      <input type="checkbox" id="toggle">
-      <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="adventures.html">My Adventures</a>
-          <a href="story.html">My Story</a>
-      </div>
+    <label for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="adventures.html">My Adventures</a>
+      <a href="story.html">My Story</a>
+    </div>
   </div>
 
   <div class="main-wrapper">
@@ -74,11 +75,31 @@
       <h2> A Picture is Worth 1,000 Words...</h2>
 </div>
 <div>
-<ul class="rslides">
-  <li><img src="kanye.jpg" alt=""></li>
-  <li><img src="kanye2.jpg" alt=""></li>
-  <li><img src="miami.jpg" alt=""></li>
-</ul>
+      <div class="container">
+        <div class="slider-outer">
+          <img src="images/arrow-left.png" class="prev" alt="Prev">
+          <div class="slider-inner">
+            <img src="images/slider1.jpg" class="active">
+            <img src="images/slider2.jpg">
+            <img src="images/slider3.jpg">
+            <img src="images/slider4.jpg">
+          </div>
+          <img src="images/arrow-right.png" class="next" alt="Next">
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div>
+        <div class="slidergrid">
+          <img class="slider1" src="images/slider1.jpg" alt="" style="width: 100%;">
+          <img class="slider2" src="images/slider2.jpg" alt="" style="width: 100%;">
+          <img class="slider3" src="images/slider3.jpg" alt="" style="width: 100%;">
+          <img class="slider4" src="images/slider4.jpg" alt="" style="width: 100%;">
+        </div>
+</div>
+
+  </body>
 </div>
 <div class="footerzone">
   <img class="blurshot" src="images/blurshot.jpg" alt="">
@@ -107,8 +128,29 @@
       </div>
     </div>
   </form>
-
-
 </div>
 </section>
+<script>
+$(document).ready(function(){
+  $('.next').on('click', function(){
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+
+    if(nextImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      nextImg.addClass('active').css('z-index', 10);
+    }
+  });
+
+  $('.prev').on('click', function(){
+    var currentImg = $('.active');
+    var prevImg = currentImg.prev();
+
+    if(prevImg.length){
+      currentImg.removeClass('active').css('z-index', -10);
+      prevImg.addClass('active').css('z-index', 10);
+    }
+  });
+});
+</script>
 </body>
